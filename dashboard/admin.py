@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import DailyCase, RegionalCase
 
-# Register your models here.
+admin.site.register(DailyCase)
+admin.site.register(RegionalCase)
