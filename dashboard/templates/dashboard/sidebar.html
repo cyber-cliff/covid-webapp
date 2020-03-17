@@ -1,7 +1,7 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{% url 'dashboard-home' %}">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{% url 'dashboard_home' %}">
         <div class="sidebar-brand-icon">
             <i class="fas fa-info-circle"></i>
         </div>
@@ -12,9 +12,9 @@
     <hr class="sidebar-divider my-0">
 
     <!-- Nav Item - Dashboard -->
-    {% url 'dashboard-home' as dash_home %}
-    {% url 'dashboard-map' as dash_map %}
-    {% url 'dashboard-cases' as dash_cases %}
+    {% url 'dashboard_home' as dash_home %}
+    {% url 'dashboard_map' as dash_map %}
+    {% url 'dashboard_cases' as dash_cases %}
 
     <li class="nav-item {% if request.get_full_path == dash_home %}active{% endif %}">
         <a class="nav-link" href={{ dash_home }}>
@@ -23,7 +23,7 @@
     </li>
 
     <li class="nav-item {% if request.get_full_path == dash_map %}active{% endif %}">
-        <a class="nav-link" href="{% url 'dashboard-map' %}">
+        <a class="nav-link" href="{% url 'dashboard_map' %}">
             <i class="fas fa-map-marked-alt"></i>
             <span>Map View</span></a>
     </li>
@@ -38,7 +38,7 @@
 
     <!-- Nav Item - Charts -->
     <li class="nav-item {% if request.get_full_path == dash_cases %}active{% endif %}">
-        <a class="nav-link" href="{% url 'dashboard-cases' %}">
+        <a class="nav-link" href="{% url 'dashboard_cases' %}">
             <i class="fas fa-users"></i>
             <span>Cases</span></a>
     </li>

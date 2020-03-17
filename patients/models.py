@@ -37,7 +37,7 @@ class HealthFacility(models.Model):
     service_level = models.IntegerField(choices=SERVICE_CAPABILITY_LEVEL)
     capacity = models.IntegerField()
     covid_capacity = models.BooleanField(choices=TRUE_FALSE_CHOICES)
-    notes = models.TextField(max_length=300)
+    notes = models.TextField(max_length=300, blank=True)
 
     def __str__(self):
         return self.name
@@ -73,7 +73,7 @@ class Patient(models.Model):
         ('dead', 'Dead'),
     ]
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, blank=True)
-    death_date = models.DateField(blank=True)
+    death_date = models.DateField(blank=True, null=True)
     death_cause = models.CharField(max_length=300, blank=True)
     remarks = models.CharField(max_length=300, blank=True)
 
