@@ -3,5 +3,5 @@ from .views import dashboard, mapview
 
 urlpatterns = [
     path('dashboard/', dashboard, name='dashboard-home'),
-    path('map/', mapview, name='dashboard-map')
+    path('map/', mapview, name='dashboard-map'),
 ]

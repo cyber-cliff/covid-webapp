@@ -19,7 +19,9 @@
     rel="stylesheet">
 
   <!-- Custom styles for this template-->
-  <link href="{% static 'dashboard/css/sb-admin-2.min.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'dashboard/css/sb-admin-2.min.css' %}">
+  <link rel="stylesheet" href="{% static 'dashboard/css/patient_table.css' %}">
+  <link rel="stylesheet" href="{% static 'dashboard/css/map.css' %}">
 
 </head>
 
@@ -29,116 +31,7 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
-      <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-        <div class="sidebar-brand-icon">
-          <i class="fas fa-info-circle"></i>
-        </div>
-        <div class="sidebar-brand-text mx-3">COVID-19 Information</div>
-      </a>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider my-0">
-
-      <!-- Nav Item - Dashboard -->
-      {% url 'dashboard-home' as dash_home %}
-      {% url 'dashboard-map' as dash_map %}
-
-      <li class="nav-item {% if request.get_full_path == dash_home %}active{% endif %}">
-        <a class="nav-link" href={{ dash_home }}>
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard View</span></a>
-      </li>
-
-      <li class="nav-item {% if request.get_full_path == dash_map %}active{% endif %}">
-        <a class="nav-link" href="{% url 'dashboard-map' %}">
-          <i class="fas fa-map-marked-alt"></i>
-          <span>Map View</span></a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Numbers? Numbers!
-      </div>
-
-      <!-- Nav Item - Charts -->
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fas fa-users"></i>
-          <span>Cases</span></a>
-      </li>
-
-      <!-- Nav Item - Charts -->
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fas fa-hospital-alt"></i>
-          <span>Hospitals</span></a>
-      </li>
-
-
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Other shit
-      </div>
-
-      <!-- Nav Item - Pages Collapse Menu -->
-      <!-- <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Pages</span>
-        </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Login Screens:</h6>
-            <a class="collapse-item" href="login.html">Login</a>
-            <a class="collapse-item" href="register.html">Register</a>
-            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-            <div class="collapse-divider"></div>
-            <h6 class="collapse-header">Other Pages:</h6>
-            <a class="collapse-item" href="404.html">404 Page</a>
-            <a class="collapse-item" href="blank.html">Blank Page</a>
-          </div>
-        </div>
-      </li> -->
-      <!-- Nav Item - Charts -->
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fab fa-periscope"></i>
-          <span>Self Reporting</span></a>
-      </li>
-
-      <!-- Nav Item - Charts -->
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="far fa-newspaper"></i>
-          <span>Resources</span></a>
-      </li>
-
-      <!-- Nav Item - Tables -->
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fas fa-exclamation-triangle"></i>
-          <span>Advisories</span></a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider d-none d-md-block">
-
-      <!-- Sidebar Toggler (Sidebar) -->
-      <div class="text-center d-none d-md-inline">
-        <button class="rounded-circle border-0" id="sidebarToggle"></button>
-      </div>
-
-    </ul>
+    {% include 'dashboard/sidebar.html' %}
     <!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
@@ -213,7 +106,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2019</span>
+            <span>Copyright &copy; University of the Philippines 2020</span>
           </div>
         </div>
       </footer>
@@ -246,6 +139,7 @@
   <!-- Page level custom scripts -->
   <script src="{% static 'dashboard/js/line_chart.js' %}"></script>
   <script src="{% static 'dashboard/js/pie_chart.js' %}"></script>
+  <script src="{% static 'dashboard/js/map.js' %}"></script>
 
 </body>
 

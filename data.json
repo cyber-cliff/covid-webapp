@@ -1,0 +1,19 @@
+[{
+	"model": "dashboard.dailycase",
+	"pk": 1,
+	"fields": {
+		"date": "2020-01-30",
+		"confirmed": 0,
+		"deaths": 0,
+		"recovered": 0
+	}
+}, {
+	"model": "dashboard.dailycase",
+	"pk": 2,
+	"fields": {
+		"date": "2020-01-31",
+		"confirmed": 0,
+		"deaths": 0,
+		"recovered": 0
+	}
+}]

@@ -1,0 +1,115 @@
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{% url 'dashboard-home' %}">
+        <div class="sidebar-brand-icon">
+            <i class="fas fa-info-circle"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">COVID-19 Information</div>
+    </a>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+    <!-- Nav Item - Dashboard -->
+    {% url 'dashboard-home' as dash_home %}
+    {% url 'dashboard-map' as dash_map %}
+    {% url 'dashboard-cases' as dash_cases %}
+
+    <li class="nav-item {% if request.get_full_path == dash_home %}active{% endif %}">
+        <a class="nav-link" href={{ dash_home }}>
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard View</span></a>
+    </li>
+
+    <li class="nav-item {% if request.get_full_path == dash_map %}active{% endif %}">
+        <a class="nav-link" href="{% url 'dashboard-map' %}">
+            <i class="fas fa-map-marked-alt"></i>
+            <span>Map View</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Numbers? Numbers!
+    </div>
+
+    <!-- Nav Item - Charts -->
+    <li class="nav-item {% if request.get_full_path == dash_cases %}active{% endif %}">
+        <a class="nav-link" href="{% url 'dashboard-cases' %}">
+            <i class="fas fa-users"></i>
+            <span>Cases</span></a>
+    </li>
+
+    <!-- Nav Item - Charts -->
+    <li class="nav-item">
+        <a class="nav-link" href="#">
+            <i class="fas fa-hospital-alt"></i>
+            <span>Hospitals</span></a>
+    </li>
+
+    <!-- Nav Item - Charts -->
+    <li class="nav-item">
+        <a class="nav-link" href="#">
+            <i class="fab fa-periscope"></i>
+            <span>Self Reporting</span></a>
+    </li>
+
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Others
+    </div>
+
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
+            aria-controls="collapsePages">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>COVID-19 Policies</span>
+        </a>
+        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Policies:</h6>
+                <a class="collapse-item" href="login.html">General</a>
+                <a class="collapse-item" href="login.html">Health</a>
+                <a class="collapse-item" href="register.html">Education</a>
+                <a class="collapse-item" href="register.html">Economic</a>
+                <a class="collapse-item" href="forgot-password.html">Mobility</a>
+                <!-- <div class="collapse-divider"></div>
+                <h6 class="collapse-header">Other Pages:</h6>
+                <a class="collapse-item" href="404.html">404 Page</a>
+                <a class="collapse-item" href="blank.html">Blank Page</a> -->
+            </div>
+        </div>
+    </li>
+
+
+    <!-- Nav Item - Charts -->
+    <li class="nav-item">
+        <a class="nav-link" href="#">
+            <i class="far fa-newspaper"></i>
+            <span>Resources</span></a>
+    </li>
+
+    <!-- Nav Item - Tables -->
+    <li class="nav-item">
+        <a class="nav-link" href="#">
+            <i class="fas fa-exclamation-triangle"></i>
+            <span>Advisories</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider d-none d-md-block">
+
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+
+</ul>

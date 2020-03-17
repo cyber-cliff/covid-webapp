@@ -1,5 +1,6 @@
 from datetime import datetime as dt
 from django.shortcuts import render
+from django.views import View
 from .models import DailyCase, RegionalCase
 
 # Get data from models
@@ -51,3 +52,4 @@ def dashboard(request):
 
 def mapview(request):
     return render(request, 'dashboard/map.html')
+

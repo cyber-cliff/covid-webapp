@@ -42,6 +42,10 @@ var myPieChart = new Chart(ctx, {
     },
     options: {
         maintainAspectRatio: false,
+        animation: {
+            animateScale: true,
+            animateRotate: true
+        },
         tooltips: {
             backgroundColor: "rgb(255,255,255)",
             bodyFontColor: "#858796",
