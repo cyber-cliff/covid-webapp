@@ -28,14 +28,8 @@
   <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
   <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
 
-  <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
-  <script type='text/javascript' src='http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js'></script>
-  <script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js'></script>
-
   <!-- Round Toggles -->
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 
@@ -143,7 +137,16 @@
 
   <!-- Core plugin JavaScript-->
   <script src="{% static 'dashboard/vendor/jquery-easing/jquery.easing.min.js' %}"></script>
-
+  
+  <!-- Leaflet  -->
+  <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+  <script type='text/javascript' src='http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js'></script>
+  <script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js'></script>
+  
+  <!-- Mapping   -->
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
   <!-- Custom scripts for all pages-->
   <script src="{% static 'dashboard/js/sb-admin-2.min.js' %}"></script>
 
@@ -155,6 +158,12 @@
   <script src="{% static 'dashboard/js/pie_chart.js' %}"></script>
   <script src="{% static 'dashboard/js/map.js' %}"></script>
 
+  <!-- Page level plugins -->
+  <script src="{% static 'dashboard/js/patient_table.js' %}"></script>
+  <script src="{% static 'dashboard/js/datatable-bootstrap4.min.js' %}"></script>
+  
+  <!-- Page level custom scripts -->
+  <script src="{% static 'dashboard/js/demo/datatables-demo.js' %}"></script>
 </body>
 
 </html>
