@@ -3,7 +3,7 @@ A webapp for tracking COVID-19 statistics in the Philippines and other related p
 
 ## How to Setup
 1. Install Python 3.
-2. As a virtual env manager, install pip.
+2. As a virtual env manager, install pipenv using `pip install pipenv`.
 3. Clone the repository and `cd` inside the folder.
 4. Run `pipenv install` to install the environment shit.
 5. Run `pipenv shell` to start the virtual env.
