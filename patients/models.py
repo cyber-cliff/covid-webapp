@@ -73,7 +73,7 @@ class Patient(models.Model):
         ('dead', 'Dead'),
     ]
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, blank=True)
-    death_date = models.DateField(blank=True)
+    death_date = models.DateField(blank=True, null=True)
     death_cause = models.CharField(max_length=300, blank=True)
     remarks = models.CharField(max_length=300, blank=True)
 
