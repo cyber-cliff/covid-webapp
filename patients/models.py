@@ -37,7 +37,7 @@ class HealthFacility(models.Model):
     service_level = models.IntegerField(choices=SERVICE_CAPABILITY_LEVEL)
     capacity = models.IntegerField()
     covid_capacity = models.BooleanField(choices=TRUE_FALSE_CHOICES)
-    notes = models.TextField(max_length=300)
+    notes = models.TextField(max_length=300, blank=True)
 
     def __str__(self):
         return self.name

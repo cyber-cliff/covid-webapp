@@ -4,9 +4,46 @@
 <div class="container-fluid">
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Map</h1>
+        <!-- <div id="map"></div> -->
+            <div class="row ">
+                <div class="col-xs-6 col-md-2">
+                    <table>
+            <tr>
+                <th>Overlays</th>
+            </tr>
+            <tr>
+              <td>Affected</td>
+              <td>
+                <label class="switch ">
+                    <input type="checkbox" class="primary">
+                    <span class="slider round"></span>
+                  </label>
+              </td>
+            </tr>
+            <tr>
+              <td>Hospitals</td>
+              <td>
+                <label class="switch ">
+                    <input type="checkbox" class="primary" onclick="return showHospital(this)" id="gago">
+                    <span class="slider round"></span>
+                  </label>
+              </td>
+            </tr>
+          </table>    
+                </div>
+                <div id="map" class="col-xs-6 col-md-9"></div> 
+            </div>
+       
+        <!-- <div class="row">
+            <div class=".col-6 .col-md-4"><b>Overlays</b></div>
+            
+            <div class="col-8"><div id="map"></div></div>
+
+          </div> -->
+
         <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
     </div>
+
 </div>
 {% endblock content %}
