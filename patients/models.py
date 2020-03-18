@@ -24,7 +24,7 @@ class HealthFacility(models.Model):
     name = models.CharField(max_length=300)
     latitude = models.FloatField()
     longitude = models.FloatField()
-    region = models.ForeignKey(RegionalCase, on_delete=models.SET_NULL, null=True)
+    region = models.CharField(max_length=200)
     province = models.CharField(max_length=200)
     address = models.CharField(max_length=300)
     contact = models.CharField(max_length=300)
@@ -34,7 +34,7 @@ class HealthFacility(models.Model):
         (2, 'Level 2'),
         (3, 'Level 3')
     ]
-    service_level = models.IntegerField(choices=SERVICE_CAPABILITY_LEVEL)
+    service_level = models.IntegerField(choices=SERVICE_CAPABILITY_LEVEL,blank=True, null=True)
     capacity = models.IntegerField(blank=True, null=True)
     covid_capacity = models.BooleanField(choices=TRUE_FALSE_CHOICES)
     notes = models.TextField(max_length=300, blank=True)
@@ -62,7 +62,7 @@ class Patient(models.Model):
     onset_date = models.DateField()
     admission_date = models.DateField()
     lab_confirmation_date = models.DateField()
-    admitted_to = models.ForeignKey('HealthFacility',on_delete=models.SET_NULL, null=True,blank=True)
+    admitted_to = models.ForeignKey(HealthFacility,on_delete=models.SET_NULL, null=True,blank=True, related_name='hospital')
     residence_city_mun = models.CharField(max_length=100, blank=True)
     city_mun_psgc = models.CharField(max_length=50, blank=True)
     residence_prov = models.CharField(max_length=100, blank=True)

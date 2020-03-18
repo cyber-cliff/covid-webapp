@@ -14,12 +14,13 @@ class CasesView(View):
         output = []
         dict_output = {}
         for patient in qset:
-            # print(patient,patient.exposure, patient.exposure_link.all(), patient.symptoms.all())
             obj = model_to_dict(patient)
+            hospital = patient.admitted_to
             exp_link = list(map(lambda x: x.case_number, obj['exposure_link']))
             symptoms = list(map(lambda x: x.name, obj['symptoms']))
             obj['exposure_link'] = exp_link
             obj['symptoms'] = symptoms
+            obj['admitted_to'] = hospital
             output.append(obj)
 
             # Add transmission fielf to obj for dict_output
@@ -27,6 +28,7 @@ class CasesView(View):
                 obj['transmission'] = 'Local'
             else:
                 obj['transmission'] = 'Imported'
+            obj['admitted_to'] = hospital.name
             dict_output[patient.case_number] = obj
         return {
             'output': output,

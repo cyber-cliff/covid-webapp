@@ -9,6 +9,8 @@ ipython = "*"
 [packages]
 django = "==2.*"
 pandas = "*"
+requests = "*"
+apscheduler = "*"
 
 [requires]
 python_version = "3.7"
