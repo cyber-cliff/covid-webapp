@@ -6,21 +6,16 @@ function fcn (e) {
     let key = e.toUpperCase();
     let patient = patients[key]
     const header = `
-        <h4 class="modal-title">Case: ${key}</h4>
+        <h4 class="modal-title" style="color: white">Case: ${key}</h4>
 
         <div>
-            <button type="button" class="btn btn-outline-primary"><i
-                    class="fas fa-angle-left"></i>
-                Previous</button>
-            <button type="button" class="btn btn-outline-primary">Next <i
-                    class="fas fa-angle-right"></i></button>
             <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
     `;
     const markup = `
     <!-- Modal body -->
         <div class="container">
-            <h2>${patient.age} Years Old / ${patient.sex}</h2>
+            <h5>${patient.age} Years Old / ${patient.sex == 'M' ? 'Male': 'Female'}</h5>
             <table class="table">
                 <tbody>
                     <tr>
@@ -59,12 +54,19 @@ function fcn (e) {
                     </tr>
                     <tr>
                         <td>
-                            Symptoms <div class="container">
-                                <h5><span class="badge badge-secondary"
-                                        style="background-color: lightpink;">Cough</span>
+                            Symptoms 
+                        </td>
+                        <td>
+                            <div class="container">
+                                <h5>
+                                ${patient.symptoms.map((item, i) => `
+                                    <span class="badge badge-secondary"
+                                            style="background-color: #bd574e;">${item}</span>
+                                `).join('')}
+                                
+                                </h5>
                             </div>
                         </td>
-                        <td></td>
 
                     </tr>
                     <tr>
@@ -76,42 +78,38 @@ function fcn (e) {
                         <td style="font-weight: bold;">Yes</td>
                     </tr>
                     <tr>
-                        <td>Travel Route
-                            <div class="container">
-                                <h5><span class="badge badge-secondary"
-                                        style="background-color: lightpink;">Wuhan</span>
-                                    <span class="badge badge-secondary"
-                                        style="background-color: lightpink;">Hong
-                                        Kong</span>
-                                    <span class="badge badge-secondary"
-                                        style="background-color: lightpink;">Cebu</span>
-                                    <span class="badge badge-secondary"
-                                        style="background-color: lightpink;">Dumaguete</span>
-                                    <span class="badge badge-secondary"
-                                        style="background-color: lightpink;">Manila</span>
-                                </h5>
-                            </div>
-                        <td></td>
-                        </td>
+                        <td>Latest Travel Route</td>
+                            
+                        <td><div class="container">
+                        <h5>
+                            <span class="badge badge-secondary"
+                                style="background-color: #587850;">${patient.country_visited_0}</span>
+                            <span class="badge badge-secondary"
+                                style="background-color: #709078;">${patient.country_visited_1}</span>
+                            <span class="badge badge-secondary"
+                                style="background-color: #78b0a0;">${patient.country_visited_2}</span>
+
+                        </h5>
+                    </div></td>
+                        
                     </tr>
                     <tr>
                         <td>Possible link to</td>
-                        <td style="font-weight: bold;">PH 2</td>
+                        <td>
+                            <div class="container">
+                                <h5>
+                                ${patient.exposure_link.map((item, i) => `
+                                    <span class="badge badge-secondary"
+                                            style="background-color: #61c0bf;">${item}</span>
+                                `).join('')}
+                                
+                                </h5>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td>Relation</td>
-                        <td style="font-weight: bold;">Wife</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Other Information
-                            <div class="container">
-                                <span class="text" style="font-weight: bold;">First
-                                    case of COVID-19 in
-                                    Philippines</span>
-                            </div>
-                        <td></td>
-                        </td>
+                        <td style="font-weight: bold;">${patient.exposure}</td>
                     </tr>
                 </tbody>
             </table>
