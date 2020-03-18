@@ -1,7 +1,10 @@
 from datetime import datetime as dt
 from django.shortcuts import render
 from django.views import View
+from django.forms.models import model_to_dict
+
 from .models import DailyCase, RegionalCase
+from patients.models import HealthFacility
 
 # Get data from models
 def get_daily():
@@ -51,5 +54,10 @@ def dashboard(request):
     return render(request,'dashboard/dashboard.html', context)
 
 def mapview(request):
-    return render(request, 'dashboard/map.html')
+    hospitals = HealthFacility.objects.all()
+    hospitals_dict = list(map(lambda x: model_to_dict(x), hospitals))
+    context = {
+        'hospitals': hospitals_dict
+    }
+    return render(request, 'dashboard/map.html', context=context)
 

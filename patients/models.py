@@ -35,7 +35,7 @@ class HealthFacility(models.Model):
         (3, 'Level 3')
     ]
     service_level = models.IntegerField(choices=SERVICE_CAPABILITY_LEVEL)
-    capacity = models.IntegerField()
+    capacity = models.IntegerField(blank=True, null=True)
     covid_capacity = models.BooleanField(choices=TRUE_FALSE_CHOICES)
     notes = models.TextField(max_length=300, blank=True)
 
@@ -57,8 +57,8 @@ class Patient(models.Model):
     country_visited_1 = models.CharField(max_length=40, blank=True)
     country_visited_2 = models.CharField(max_length=40, blank=True)
     exposure = models.CharField(max_length=100)
-    exposure_link = models.ForeignKey('self',on_delete=models.SET_NULL, null=True, blank=True)
-    symptoms = models.ManyToManyField(Symptom)
+    exposure_link = models.ManyToManyField('self', blank=True)
+    symptoms = models.ManyToManyField(Symptom, blank=True)
     onset_date = models.DateField()
     admission_date = models.DateField()
     lab_confirmation_date = models.DateField()
