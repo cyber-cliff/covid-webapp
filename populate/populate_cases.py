@@ -3,13 +3,13 @@ import datetime
 import time
 import urllib, os
 import json
-from apscheduler.scheduler import Scheduler
+# from apscheduler.scheduler import Scheduler
 import requests
 
 # Start the scheduler
-sched = Scheduler()
-sched.daemonic = False
-sched.start()
+# sched = Scheduler()
+# sched.daemonic = False
+# sched.start()
 
 def job_function():
     if os.path.exists("/home/dev-hpc/Documents/covid-19/"):
@@ -39,10 +39,10 @@ def job_function():
     else:
         df = pd.read_csv('/home/dev-hpc/Documents/covid-19/locations.csv')
         print(df.head(10))
-        time.sleep(3600)
+        # time.sleep(3600)
 
 # Schedules job_function to be run once each minute
-sched.add_cron_job(job_function,  minute='0-59')
-
-
+# sched.add_cron_job(job_function,  minute='0-59')
+if __name__ == '__main__':
+    job_function()
 

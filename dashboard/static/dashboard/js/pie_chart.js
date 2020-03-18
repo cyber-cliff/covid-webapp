@@ -69,7 +69,7 @@ var ctx = document.getElementById("ageChart");
 var myBarChart = new Chart(ctx, {
   type: 'horizontalBar',
   data: {
-    labels: ["11-20", "21-30", "31-40", "41-50", "51-60", "61-70", "71-80", "91-90"],
+    labels: ["11-20", "21-30", "31-40", "41-50", "51-60", "61-70", "71-80", "81-90"],
     datasets: [{
       label: "Cases",
       backgroundColor: "#385170",
