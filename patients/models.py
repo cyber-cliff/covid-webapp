@@ -20,23 +20,18 @@ class Symptom(models.Model):
 
 
 class HealthFacility(models.Model):
-    hospital_id = models.IntegerField(blank=True)
+    hospital_id = models.IntegerField(null=True)
     name = models.CharField(max_length=300)
-    latitude = models.FloatField()
-    longitude = models.FloatField()
-    region = models.ForeignKey(RegionalCase, on_delete=models.SET_NULL, null=True)
+    latitude = models.FloatField(null=True)
+    longitude = models.FloatField(null=True)
+    region = models.CharField(max_length=200, null=True)
     province = models.CharField(max_length=200)
     address = models.CharField(max_length=300)
     contact = models.CharField(max_length=300)
     hospital_type = models.CharField(max_length=200)
-    SERVICE_CAPABILITY_LEVEL = [
-        (1,'Level 1'),
-        (2, 'Level 2'),
-        (3, 'Level 3')
-    ]
-    service_level = models.IntegerField(choices=SERVICE_CAPABILITY_LEVEL)
-    capacity = models.IntegerField()
-    covid_capacity = models.BooleanField(choices=TRUE_FALSE_CHOICES)
+    service_level = models.CharField(max_length=200, null=True)
+    capacity = models.CharField(max_length=10, null=True)
+    covid_capacity = models.TextField(max_length=200, null=True)
     notes = models.TextField(max_length=300, blank=True)
 
     def __str__(self):
