@@ -27,7 +27,12 @@ def job_function():
         # to dataframe
         df = pd.read_csv(path+'/hospitals.csv')
         df.rename(columns={'HospitalID\nDoH Short Code': 'hospital_id', 'Hospital': 'names', 'LATITUDE': 'latitude', 'LONGITUDE': 'longitude', 'Region': 'region', 'Province': 'province', 'Address': 'address', 'Contact': 'contact', 'Type': 'hospital_type', 'Service Capability Level': 'service_level', 'Capacity': 'capacity', 'COVID Capacity\n(Y/N)': 'covid_capacity', 'Notes': 'notes'}, inplace = True)
-        df.fillna("No Data", inplace = True) 
+        df['hospital_id'].fillna("0", inplace = True)
+        df['latitude'].fillna("0.0", inplace = True)
+        df['longitude'].fillna("0.0", inplace = True)
+        df['capacity'].fillna("0", inplace = True)
+        df['covid_capacity'].fillna("0", inplace = True)
+        df.fillna("No Data", inplace = True)
         df.drop('HospitalID\nDoH Short Code.1', axis=1, inplace=True)
         print(df.head(5))
 
@@ -36,7 +41,7 @@ def job_function():
 
         for key,value in df.iterrows():
             dic = {}
-            dic["model"] = "dashboard.healthfacility"
+            dic["model"] = "patients.healthfacility"
             dic["pk"] = key+1
             fields = {}
             fields["hospital_id"] = value.hospital_id

@@ -41,7 +41,7 @@ All hospitals, whether public or private, should accommodate anyone and be able 
 2162,Cagayan Valley Medical Center,2162,17.656393,121.746703,Region 2,Cagayan,"Maharlika Highway, Carig Sur, Tuguegarao City, Cagayan",078-3020000/3043789 / cvmcr2@gmail.com,Public - DOH Retained,Level 3,500,,OPLAN Metro-Yakal-Plus - Metro manila Earthquake Contingency Plan
 8483,"Dr. Ronald P. Guzman Medical Center, Inc.",8483,17.649789,121.755961,Region 2,Cagayan,"Enrile Blvd., Carig, Tuguegarao City, Cagayan",078-3040925-26 / ao_rppgmc@yahoo.com,Private,Level 2,100,,
 5071,"St. Paul Hospital of Tuguegarao, Inc. ",5071,17.614009,121.707375,Region 2,Cagayan,"Ugac Highway, Tuguegarao, Cagayan",sph_tuguegarao@yahoo.com.ph,Private,Level 2,250,,
-NO DATA,"Grupo Medico De Dios, Inc.",NO DATA,,,Region 2,Cagayan,"Bulala, Camalaniugan, Cagayan",0917-8810616 / 0917-5825518 / grupomedicodedios.ph@gmail.com,Private,Level 2,33,,
+,"Grupo Medico De Dios, Inc.",,,,Region 2,Cagayan,"Bulala, Camalaniugan, Cagayan",0917-8810616 / 0917-5825518 / grupomedicodedios.ph@gmail.com,Private,Level 2,33,,
 32023,"Divine Mercy Wellness and Medical Center, Inc. ",32023,,,Region 2,Cagayan,"Arellano cor. Burgos St., Centro 06, Tuguegarao City, Cagayan",078-8444624 / a.dmwc@yahoo.com,Private,Level 2,100,,
 3313,Southern Isabela Medical Center,3313,16.680027,121.546576,Region 2,Isabela,"Cor. Recto Ave., Zamora St., Rosario, Santiago City, Isabela",078-3050459 / southern_isabela09@yahoo.com,Public - DOH Retained,Level 2,200,,
 6497,"De Vera's Medical Center, Inc.",6497,16.694988,121.5539,Region 2,Isabela,"City Road, Calao East, Santiago City, Isabela",078-3052787 / 3052802 fax / bona_dvgh@yahoo.com,Private,Level 2,50,,
@@ -50,12 +50,12 @@ NO DATA,"Grupo Medico De Dios, Inc.",NO DATA,,,Region 2,Cagayan,"Bulala, Camalan
 2262,"Callang General Hospital and Medical Center, Inc. ",2262,16.692513,121.550464,Region 2,Isabela,"Judge Taguinod St., Centro East, Santiago City, Isabela",078-3050734 / 3051356 fax / callang_hospital@yahoo.com,Private,Level 2,55,,
 1688,"Adventist Hospital-Santiago City, Inc. ",1688,16.697168,121.566951,Region 2,Isabela,"Purok 5, National Highway, Mabini, Santiago City, Isabela",078-3050130 / 3050161 fax / jto_21@yahoo.com,Private,Level 2,50,,
 30152,"Isabela United Doctors Medical Center, Inc. ",30152,16.948657,121.771717,Region 2,Isabela,"National Highway, Brgy. Cabaruan, Cauayan, Isabela","(078) 652 4177/ 
-www.iudmc.com",Private,Level 2/3,NO DATA,,
+www.iudmc.com",Private,Level 2/3,,,
 5566,"PLTC, Inc., Luis A. Tiam Medical Center",5566,16.534821,121.224255,Region 2,Nueva Vizcaya,"Brgy. Bascaran, Solano, Nueva Vizcaya",0917-5504033 / pltci_luistiaam.medicalcenter@yahoo.com,Private,Level 2,60,,
 2703,Region II Trauma and Medical Center,2703,16.483237,121.134277,Region 2,Nueva Vizcaya,"Magsaysay, Bayombong, Nueva Vizcaya, National Highway, Brgy. Roxas, Solano, Nueva Vizcaya",078-8053561-64 / 8053560 fax / veteransregionalhospital@yahoo.com / vrhro21995@gmail.com,Public - DOH Retained,Level 2,200,,
-NO DATA,Salubris Medical Center,NO DATA,16.521954,121.193767,Region 2,Nueva Vizcaya,"National Highway, Brgy. Roxas, Solano, Nueva Vizcaya",0917-5837600 / 078-3210374 / salubrismedical@gmail.com,Private,Level 2,100,,
+,Salubris Medical Center,,16.521954,121.193767,Region 2,Nueva Vizcaya,"National Highway, Brgy. Roxas, Solano, Nueva Vizcaya",0917-5837600 / 078-3210374 / salubrismedical@gmail.com,Private,Level 2,100,,
 427,Bataan Provincial Hospital,427,14.678424,120.530383,Region 3,Bataan,"Manahan St., Tenejero, Balanga City, Bataan",047-2373635 / bgh_bataan2005@yahoo.com.ph,Public - DOH Retained,Level 2,214,,
-38108,"CENTRO MEDICO DE SANTISIMO ROSARIO, INC.",38108,14.672724,120.524383,Region 3,Bataan,"Lot 1 PSD 25823 Roman Super Highway, Brgy. Tenejero, Balanga City, Bataan",0917 628 2813,Private,Level 2/3,NO DATA,,
+38108,"CENTRO MEDICO DE SANTISIMO ROSARIO, INC.",38108,14.672724,120.524383,Region 3,Bataan,"Lot 1 PSD 25823 Roman Super Highway, Brgy. Tenejero, Balanga City, Bataan",0917 628 2813,Private,Level 2/3,,,
 3008,"Bataan Doctors Hospital and Medical Center, Inc. ",3008,,,Region 3,Bataan,"Cuadermo Street, Dona Francisco Subdivision, Balanga City, Bataan",047-2370164 / batdocs@yahoo.com,Private,Level 2,100,,
 4569,Bataan St. Joseph Hospital & Medical Center Corp. ,4569,,,Region 3,Bataan,"Don Manuel Banzon Ave., Brgy. Dona Francisca, Balanga City, Bataan",047-2372009 / bsjb_72@yahoo.com,Private,Level 2,50,,
 4757,"Premiere General Hospital of Nueva Ecija, Baler Aurora, inc.",4757,,,Region 3,Aurora,"Brgy. Suklayin, Baler, Aurora",0998-9607195 / premieregeneral@yahoo.com,Private,Level 2,30,,
@@ -129,7 +129,7 @@ MEDICAL CENTER, INC.",7694,,,Region 3,Zambales,"#2 National Highway, Brgy. Baret
 5148,Taal Polymedic Hospital and Medical Center,5148,13.88594,120.9397109,Region 4-A,Batangas,"Diversion Road, Carsuche, Taal",043-2142384 / 7065116 / tphmedcen96@yahoo.com,Private,Level 2,40,,
 2829,BATANGAS MEDICAL CENTER,2829,13.7668617,121.0641154,Region 4-A,Batangas,"Kumintang Ibaba, Batangas City",043-7408307 / 7230165 fax / batmedcen@yahoo.com,Public - DOH Retained,Level 3,400,,
 38110,BATANGAS HEALTHCARE SPECIALISTS MEDICAL CENTER,38110,13.7876482,121.0580377,Region 4-A,Batangas,"Diversion Road, Barangay Alangilan, Batangas City","
-(043) 741 1888",Private ,Level 2/3,NO DATA,,
+(043) 741 1888",Private ,Level 2/3,,,
 5483,"GOLDEN GATE GENERAL HOSPITAL, INC.",5483,13.7576692,121.0595461,Region 4-A,Batangas,"17 P. Prieto St., Brgy. 4, Poblacion, Batangas City",043-7238508/ 7237693 fax/ gggh_HR@yahoo.com,Private ,Level 2,100,,
 4334,SAINT PATRICK'S HOSPITAL MEDICAL CENTER,4334,13.7555318,121.0596878,Region 4-A,Batangas,Lopez Jaena St.,043-7230754/ 7238386 fax/ sphmc_hr@ymail.com,Private,Level 3,100,,
 5998,"BATANGAS HEALTH CARE HOSPITAL, JESUS OF NAZARETH",5998,13.7634445,121.0785093,Region 4-A,Batangas,Brgy. Gulod Itaas,043-7232918/ 7238615 fax/ bhchjon_nazareth@yahoo.com,Private,Level 2,139,,
@@ -197,7 +197,7 @@ MEDICAL CENTER, INC.",7694,,,Region 3,Zambales,"#2 National Highway, Brgy. Baret
 4529,"ADVENTIST HOSPITAL-PALAWAN, INC.",4529,,,Region 4-B,Palawan,"San Pedro, Puerto Princesa City",048-4331247 loc. 181/ 108/ adventisthospital_palawan@yahoo.com,Private,Level 2,90,,
 266,CAMARINES NORTE PROVINCIAL HOSPITAL,266,,,Region 5,Camarines Norte,"Baqasbas Road, Daet",054-4400178 / 4400199 / 4400178 fax / cnph_pho@yahoo.com / pho_camnorte@yahoo.com,Public,Level 2,100,,
 4474,SANTISSIMA TRINIDAD HOSPITAL OF DAET,4474,,,Region 5,Camarines Norte,"Diversion Road, Camambugan, Daet",054-7210224/ santissima_19@yahoo.com,Private,Level 2,25,,
-NO DATA,STO. NINO HOSPITAL,NO DATA,,,Region 5,Camarines Norte,"Mercedes Road, Daet",054-4400979/ 440977 fax/ santoninohospital @yahoo.com,Private,Level 2,72,,
+,STO. NINO HOSPITAL,,,,Region 5,Camarines Norte,"Mercedes Road, Daet",054-4400979/ 440977 fax/ santoninohospital @yahoo.com,Private,Level 2,72,,
 389,LEON D. HERNANDEZ MEMORIAL HOSPITAL,389,,,Region 5,Camarines Norte,"#1328 Dasmarines St., Brgy. 8, Daet",054-4401460/ 5712811 fax/ ldhmh_docs@yahoo.com,Private,Level 2,114,,
 1873,UNIVERSIDAD DE STA. ISABEL DE NAGA,1873,,,Region 5,Camarines Sur,"Roxas Ave., Diversion Road, Naga City",054-4724025/ 8118060/ 8111210/ mshospital2004@yahoo.com/ usihsdvphsoffice@yahoo.com,Private,Level 3,150,,
 270,Bicol Regional Training and Teaching Hospital,270,,,Region 5,Albay,"Rizal St., Legazpi City",,Public,Level 3,250,,
@@ -226,7 +226,7 @@ NO DATA,STO. NINO HOSPITAL,NO DATA,,,Region 5,Camarines Norte,"Mercedes Road, Da
 32078,MEDICUS MEDICAL CENTER CORPORATION,32078,,,Region 6,Iloilo,"R.V. Bernardo Ave., Brgy. San Rafael, Mandurriao, Iloilo City",033-3287777/ 3287701/ 3287777 loc 130 fax/ medicusmedicalcenter@yahoo.com,Private,Level 2,100,,
 2789,WEST VISAYAS STATE UNIVERSITY MEDICAL CENTER,2789,,,Region 6,Iloilo,"E. Lopez St., Jaro, Iloilo City",033-3202431 / 3202623 fax / wvsumedcenter@yahoo.com,Public,Level 3,300,,
 38114,METRO ILOILO HOSPITAL AND MEDICAL CENTER,38114,,,Region 6,Iloilo,"Metropolis Ave. Brgy. Tagbak, Jaro, Iloilo Cit","033 327-1527/ 033 327-2030/ admin@metroiloilohospital.com/ nso@metroiloilohospital.com
-",Private,Level 2/3,NO DATA,,
+",Private,Level 2/3,,,
 5034,WESTERN VISAYAS MEDICAL CENTER,5034,,,Region 6,Iloilo,"Q. Abeto St., Mandurriao, Iloilo City",033-3211797,Public,Level 3,300,,
 6594,ST. THERESE-MTC COLLEGE HOSPITAL,6594,,,Region 6,Iloilo,"San Agustin St., Brgy. San Agustin",033-3378275/ 3378300/ 3378299 fax/ sttheresemtcchospital@gmail.com,Private,Level 2,100,,
 32079,QUALIMED HEALTH NETWORK,32079,,,Region 6,Iloilo,"Ayala Atria Park, Don Donato Pison Avee., Brgy. San Rafael, Mandurriao, loilo City",049-3024015/ 09175609755/ 033-3215272 loc. 207 fax/ rparboleda@qualimed.com.ph/ iloilo@qualimed.com,Private,Level 2,102,,
@@ -241,7 +241,7 @@ NO DATA,STO. NINO HOSPITAL,NO DATA,,,Region 5,Camarines Norte,"Mercedes Road, Da
 6595,"THE DOCTORS’ HOSPITAL, INC.",6595,,,Region 6,Negros Occidental,"B.S. Aquino Drive, Bacolod City",034-4682100 / 4331256 fax / thedoctorshosp@yahoo.com,Private,Level 3,150,,
 4299,CORAZON LOCSIN MONTELIBANO MEMORIAL REGIONAL HOSPITAL,4299,,,Region 6,Negros Occidental,"Lacson St., Bacolod City, Negros Occidental",034-4332697 / 7086893 fax / clmmrh_coh@yahoo.com,Private,Level 3,400,,
 38115,HOLY MOTHER OF MERCY HOSPITAL,38115,,,Region 6,Negros Occidental,"Don Emilio Village, Rizal St., Brgy. 9, Kabankalan City, Negros Occidental","
-(034) 471-8881 to 8885/ hmomhkab@gmail.com",Private,Level 2/3,NO DATA,,
+(034) 471-8881 to 8885/ hmomhkab@gmail.com",Private,Level 2/3,,,
 32022,"SOUTH BACOLOD GENERAL HOSPITAL AND MEDICAL CENTER, INC.",32022,,,Region 6,Negros Occidental,"Araneta Highway, Brgy. Pahanocoy, Bacolod City, Negros Occidental",034-7042911-14,Private,Level 2,100,,
 2523,BACOLOD QUEEN OF MERCY HOSPITAL (Old name: BACOLOD OUR MOTHER OF MERCY SPECIALTY HOSPITAL),2523,,,Region 6,Negros Occidental,"Eroreco, Mandalagan, Bacolod City",034-7080181 / 4341031 / 4322887 fax / admin@bolmsh.com,Private,Level 2,200,,
 3050,"VISAYAS COMMUNITY MEDICAL CENTER, INC.",3050,,,Region 7,Cebu,"85 Osmena Blvd., Cebu City",032-2380000 / 2612111 fax / adventisthospitalcevbu@gmail.com,Private,Level 3,200,,
@@ -443,7 +443,7 @@ Quezon City",02-84268888 / 9361817 / 9360181 / novagen_hospital@yahoo.com,Privat
 (02) 8927 6426",Public (Military),Level 3,766,,
 5104,THE MEDICAL CITY - ORTIGAS,5104,14.5900884,121.0690892,NCR,Metro Manila,"The Medical City Compound, Ortigas Ave., Pasig City",02-9881000 / 9887000 loc 6612 / 6314508 fax,Private,,,,
 499,DR. JOSE FABELLA MEMORIAL HOSPITAL,499,14.60619,120.98422,NCR,Metro Manila,"Lope de Vega St., Sta. Cruz, Manila",7345561-65 / 7357146 fax / rfloresmcc2@yahoo.com / docmeng_ph@yahoo.com,Public - DOH Retained,Level 3,522,,
-NO DATA,VALENZUELA CITY GENERAL HOSPITAL,NO DATA,14.68976,120.97807,NCR,Metro Manila,"Padrigal St., Karuhatan, Valenzuela City",2946711 / valgen_hosp@yahoo.com,Public - DOH Retained,Level 3,100,,Formerly known as VALENZUELA MEDICAL CENTER
+,VALENZUELA CITY GENERAL HOSPITAL,,14.68976,120.97807,NCR,Metro Manila,"Padrigal St., Karuhatan, Valenzuela City",2946711 / valgen_hosp@yahoo.com,Public - DOH Retained,Level 3,100,,Formerly known as VALENZUELA MEDICAL CENTER
 572,"CHILD CARE, INC. (formerly HOSPITAL OF THE INFANT JESUS)",572,14.61403,120.98903,NCR,Metro Manila,"#1556 Laon Laan Road, Sampaloc, Manila City",02-87312772 / 7312771-76 / 3054344 / 3054350 fax / hij_recordssections652@yahoo.com,Private,Level 3,140,,
 2244,AIR FORCE GENERAL HOSPITAL,2244,14.5169057,121.0199457,NCR,Metro Manila,"Gozar St., Colonel Jesus Villamor Air Base, Pasay City",8535056 / 8535043 / 5386701 LOC 4613 fax,Public (Military),Level 2,100,,
 502,DR. JOSE N. RODRIGUEZ MEMORIAL HOSPITAL,502,14.76668,121.0647,NCR,Metro Manila,"St. Joseph Avenue (Dr. Uyguanco Street), Tala, Caloocan City",2942571-73 loc 127 / 9628209 fax / djnrmh2003@yahoo.com,Public - DOH Retained,Level 2,200,,
