@@ -1,7 +1,6 @@
 {% extends 'dashboard/base.html' %}
 {% block content %}
 
-
 <!-- Begin Page Content -->
 <div class="container-fluid">
     <!-- DataTales Example -->
@@ -10,15 +9,15 @@
             <h6 class="m-0 font-weight-bold text-primary">COVID-19 Philippine Cases </h6>
         </div>
         <div class="card-body">
-            <div class="table-responsive" style="overflow: hidden;">
+            <div class="table-responsive" style="overflow-x:auto;">
                 <table class="table table-bordered vertical-align" id="dataTable" width="100%" cellspacing="0">
                     <thead>
-                        <th>Case / Age / Sex </th>
-                        <th>Nationality</th>
-                        <th>Status</th>
-                        <th>Transmission</th>
-                        <th>Since</th>
-                        <th>Info</th>
+                        <th>Case / Age / Sex </i></th>
+                        <th>Nationality </i></th>
+                        <th>Status </i></th>
+                        <th>Transmission </i></th>
+                        <th>Since </i></th>
+                        <th>Info</i></th>
                     </thead>
                     <tfoot>
                         <th>Case / Age / Sex </th>
@@ -31,116 +30,120 @@
                     <tbody>
                         {{ patients.dict_output|json_script:"patients-data" }}
                         {% for patient in patients.output %}
-                            {% if patient.status == 'dead' %}
-                                <!-- DECEASED -->
-                                <tr id="deceased" style="background-color: #fed7d7;">
-                                    <td class="align-middle">
-                                        <span class="text" style="font-weight: bold;">
-                                            {{ patient.case_number }}
-                                        </span><br>
-                                        <span class="text" id="age">{{ patient.age }} years old</span> /
-                                        <span class="text" id="gender">{% if patient.sex == 'M' %}Male{% else %}Female{% endif %}</span>
-                                    </td>
-                                    <td class="align-middle">
-                                        <span class="text" style="font-weight: bold;">{{ patient.nationality }}</span><br>
-                                        <span class="text">{{ patient.residence_city_mun }}</span>
-                                    </td>
-                                    <td class="align-middle">
-                                        <i class="fas fa-user-times"></i>
-                                        <span class="text" style="font-weight: bold; color: red;">Deceased</span>
-                                    </td>
-                                    <td class="align-middle" style="font-weight: bold;">
-                                        {% if patient.country_visited_0 == '' or  patient.country_visited_0 == 'None'%}
-                                        Local
-                                        {% else %}
-                                        Imported
-                                        {% endif %}
-                                    </td>
-                                    <td class="align-middle">{{ patient.lab_confirmation_date }}</td>
-                                    <td class="align-middle">
-                                        <a href="#" class="btn btn-primary btn-icon-split btn-sm" onclick="fcn('{{ patient.case_number|slugify }}');">
-                                        <!-- <a class="btn btn-primary btn-icon-split btn-sm"> -->
-                                            <span class="icon text-white-50">
-                                                <i class="fas fa-info-circle"></i>
-                                            </span>
-                                            <span class="text">Information</span>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <!-- DECEASED -->
-                                {% elif patient.status == 'recovered' %}
-                                <tr id="recovered" style="background-color: #CCFFCC;">
-                                    <td class="align-middle">
-                                        <span class="text" style="font-weight: bold;">
-                                            {{ patient.case_number }}
-                                        </span><br>
-                                        <span class="text" id="age">{{ patient.age }} years old</span> /
-                                        <span class="text" id="gender">{% if patient.sex == 'M' %}Male{% else %}Female{% endif %}</span>
-                                    </td>
-                                    <td class="align-middle">
-                                        <span class="text" style="font-weight: bold;">{{ patient.nationality }}</span><br>
-                                        <span class="text">{{ patient.residence_city_mun }}</span>
-                                    </td>
-                                    <td class="align-middle">
-                                        <i class="fas fa-user-check"></i>
-                                        <span class="text" style="font-weight: bold; color: green;">Recovered</span>
-                                    </td>
-                                    <td class="align-middle" style="font-weight: bold;">
-                                        {% if patient.country_visited_0 == '' or  patient.country_visited_0 == 'None'%}
-                                        Local
-                                        {% else %}
-                                        Imported
-                                        {% endif %}
-                                    </td>
-                                    <td class="align-middle">{{ patient.lab_confirmation_date }}</td>
-                                    <td class="align-middle">
-                                        <!-- <a href="#" class="btn btn-primary btn-icon-split btn-sm" data-toggle="modal"
+                        {% if patient.status == 'dead' %}
+                        <!-- DECEASED -->
+                        <tr id="deceased" style="background-color: #fed7d7;">
+                            <td class="align-middle">
+                                <span class="text" style="font-weight: bold;">
+                                    {{ patient.case_number }}
+                                </span><br>
+                                <span class="text" id="age">{{ patient.age }} years old</span> /
+                                <span class="text"
+                                    id="gender">{% if patient.sex == 'M' %}Male{% else %}Female{% endif %}</span>
+                            </td>
+                            <td class="align-middle">
+                                <span class="text" style="font-weight: bold;">{{ patient.nationality }}</span><br>
+                                <span class="text">{{ patient.residence_city_mun }}</span>
+                            </td>
+                            <td class="align-middle">
+                                <i class="fas fa-user-times"></i>
+                                <span class="text" style="font-weight: bold; color: red;">Deceased</span>
+                            </td>
+                            <td class="align-middle" style="font-weight: bold;">
+                                {% if patient.country_visited_0 == '' or  patient.country_visited_0 == 'None'%}
+                                Local
+                                {% else %}
+                                Imported
+                                {% endif %}
+                            </td>
+                            <td class="align-middle">{{ patient.lab_confirmation_date }}</td>
+                            <td class="align-middle">
+                                <a href="#" class="btn btn-primary btn-icon-split btn-sm"
+                                    onclick="fcn('{{ patient.case_number|slugify }}');">
+                                    <!-- <a class="btn btn-primary btn-icon-split btn-sm"> -->
+                                    <span class="icon text-white-50">
+                                        <i class="fas fa-info-circle"></i>
+                                    </span>
+                                    <span class="text">Information</span>
+                                </a>
+                            </td>
+                        </tr>
+                        <!-- DECEASED -->
+                        {% elif patient.status == 'recovered' %}
+                        <tr id="recovered" style="background-color: #CCFFCC;">
+                            <td class="align-middle">
+                                <span class="text" style="font-weight: bold;">
+                                    {{ patient.case_number }}
+                                </span><br>
+                                <span class="text" id="age">{{ patient.age }} years old</span> /
+                                <span class="text"
+                                    id="gender">{% if patient.sex == 'M' %}Male{% else %}Female{% endif %}</span>
+                            </td>
+                            <td class="align-middle">
+                                <span class="text" style="font-weight: bold;">{{ patient.nationality }}</span><br>
+                                <span class="text">{{ patient.residence_city_mun }}</span>
+                            </td>
+                            <td class="align-middle">
+                                <i class="fas fa-user-check"></i>
+                                <span class="text" style="font-weight: bold; color: green;">Recovered</span>
+                            </td>
+                            <td class="align-middle" style="font-weight: bold;">
+                                {% if patient.country_visited_0 == '' or  patient.country_visited_0 == 'None'%}
+                                Local
+                                {% else %}
+                                Imported
+                                {% endif %}
+                            </td>
+                            <td class="align-middle">{{ patient.lab_confirmation_date }}</td>
+                            <td class="align-middle">
+                                <!-- <a href="#" class="btn btn-primary btn-icon-split btn-sm" data-toggle="modal"
                                             data-target="#myModal"> -->
-                                        <a href="#" class="btn btn-primary btn-icon-split btn-sm">
-                                            <span class="icon text-white-50">
-                                                <i class="fas fa-info-circle"></i>
-                                            </span>
-                                            <span class="text">Information</span>
-                                        </a>
-                                    </td>
-                                </tr>
-                            {% else %}
-                                <tr id="admitted">
-                                    <td class="align-middle">
-                                        <span class="text" style="font-weight: bold;">
-                                            {{ patient.case_number }}
-                                        </span><br>
-                                        <span class="text" id="age">{{ patient.age }} years old</span> /
-                                        <span class="text" id="gender">{% if patient.sex == 'M' %}Male{% else %}Female{% endif %}</span>
-                                    </td>
-                                    <td class="align-middle">
-                                        <span class="text" style="font-weight: bold;">{{ patient.nationality }}</span><br>
-                                        <span class="text">{{ patient.residence_city_mun }}</span>
-                                    </td>
-                                    <td class="align-middle">
-                                        <i class="fas fa-user-clock"></i>
-                                        <span class="text" style="font-weight: bold;">Admitted</span>
-                                    </td>
-                                    <td class="align-middle" style="font-weight: bold;">
-                                        {% if patient.country_visited_0 == '' or  patient.country_visited_0 == 'None'%}
-                                        Local
-                                        {% else %}
-                                        Imported
-                                        {% endif %}
-                                    </td>
-                                    <td class="align-middle">{{ patient.lab_confirmation_date }}</td>
-                                    <td class="align-middle">
-                                        <!-- <a href="#" class="btn btn-primary btn-icon-split btn-sm" data-toggle="modal"
+                                <a href="#" class="btn btn-primary btn-icon-split btn-sm">
+                                    <span class="icon text-white-50">
+                                        <i class="fas fa-info-circle"></i>
+                                    </span>
+                                    <span class="text">Information</span>
+                                </a>
+                            </td>
+                        </tr>
+                        {% else %}
+                        <tr id="admitted">
+                            <td class="align-middle">
+                                <span class="text" style="font-weight: bold;">
+                                    {{ patient.case_number }}
+                                </span><br>
+                                <span class="text" id="age">{{ patient.age }} years old</span> /
+                                <span class="text"
+                                    id="gender">{% if patient.sex == 'M' %}Male{% else %}Female{% endif %}</span>
+                            </td>
+                            <td class="align-middle">
+                                <span class="text" style="font-weight: bold;">{{ patient.nationality }}</span><br>
+                                <span class="text">{{ patient.residence_city_mun }}</span>
+                            </td>
+                            <td class="align-middle">
+                                <i class="fas fa-user-clock"></i>
+                                <span class="text" style="font-weight: bold;">Admitted</span>
+                            </td>
+                            <td class="align-middle" style="font-weight: bold;">
+                                {% if patient.country_visited_0 == '' or  patient.country_visited_0 == 'None'%}
+                                Local
+                                {% else %}
+                                Imported
+                                {% endif %}
+                            </td>
+                            <td class="align-middle">{{ patient.lab_confirmation_date }}</td>
+                            <td class="align-middle">
+                                <!-- <a href="#" class="btn btn-primary btn-icon-split btn-sm" data-toggle="modal"
                                             data-target="#myModal"> -->
-                                        <a href="#" class="btn btn-primary btn-icon-split btn-sm">
-                                            <span class="icon text-white-50">
-                                                <i class="fas fa-info-circle"></i>
-                                            </span>
-                                            <span class="text">Information</span>
-                                        </a>
-                                    </td>
-                                </tr>
-                            {% endif %}
+                                <a href="#" class="btn btn-primary btn-icon-split btn-sm">
+                                    <span class="icon text-white-50">
+                                        <i class="fas fa-info-circle"></i>
+                                    </span>
+                                    <span class="text">Information</span>
+                                </a>
+                            </td>
+                        </tr>
+                        {% endif %}
                         {% endfor %}
                     </tbody>
                 </table>
@@ -152,12 +155,12 @@
 
                             <!-- Modal Header -->
                             <div class="modal-header">
-                                
+
                             </div>
 
                             <!-- Modal body -->
                             <div class="modal-body">
-                                
+
                             </div>
 
                             <!-- Modal footer -->
